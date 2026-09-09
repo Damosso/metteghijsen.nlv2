@@ -1,7 +1,10 @@
+name: metteghijsen
+
 version: "3.9"
 services:
   web:
-    image: ghcr.io/damosso/metteghijsen.nlv2-frontend:latest
+    build: .
+    image: metteghijsen/web
     ports:
       - "${PORT:-}:80"
     deploy:
