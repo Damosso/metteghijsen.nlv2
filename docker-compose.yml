@@ -4,7 +4,7 @@ version: "3.9"
 services:
   web:
     build: .
-    image: metteghijsen/web
+    image: metteghijsen/web:latest
     ports:
       - "${PORT:-}:80"
     deploy:
